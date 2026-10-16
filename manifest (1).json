@@ -1,13 +1,13 @@
 {
-  "background_color": "#ffffff",
-  "dir": "ltr",
-  "display": "standalone",
   "name": "TaskFlow",
-  "orientation": "any",
-  "scope": "/",
   "short_name": "TaskFlow",
+  "description": "A simple and effective task management app.",
   "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
   "theme_color": "#ffffff",
+  "dir": "ltr",
+  "orientation": "any",
   "icons": [
     {
       "src": "icon-192.png",
