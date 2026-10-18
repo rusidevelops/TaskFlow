@@ -1,4 +1,5 @@
 let items = [];
+let taskCount = 0;
 
 const itemsDIv = document.getElementById("items")
 const input = document.getElementById("itemInput")
@@ -20,6 +21,7 @@ function renderItems() {
 
     for (const [idx, item] of Object.entries(items)) {
         const container = document.createElement("div")
+        container.className = "container"
         container.style.marginBottom = "20px"
 
         const text = document.createElement("p")
@@ -65,7 +67,6 @@ function removeItems(idx) {
     renderItems()
     saveItems()
 }
-
 document.addEventListener("DOMContentLoaded", loadItems)
 
 input.addEventListener("keydown", (e) => {

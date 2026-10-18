@@ -2,7 +2,7 @@ body{
     background: rgb(4, 4, 78);
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
@@ -10,6 +10,26 @@ body{
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: none; 
+}
+img{
+    width: 100px;
+    border: 1px solid #22D3EE;
+    margin: 20px;
+}
+.image-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;          
+    align-items: center;
+}
+
+.container {
+    background: transparent;
+    border: 1px solid gray;
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 15px;             
 }
 
 .deleteButton{
@@ -26,7 +46,6 @@ body{
     background: transperant;
     padding: 25px;
     border: 1px solid #22D3EE;
-    border-radius: 15px;
     width: 300px;
     backdrop-filter: blur(6px);
 }
@@ -35,7 +54,6 @@ body{
     background: rgb(4, 4, 78);
     color: #0B1120;
     border: none;
-    border-radius: 8px;
     padding: 9px 14px;
     cursor: pointer;
     color: white;
@@ -47,7 +65,6 @@ input{
     height: 30px;
     font-size: 16px;
     outline: none;
-    border-radius: 5px;
     color: white;
     border: 1px solid #22D3EE;
     font-family: Arial, Helvetica, sans-serif;
