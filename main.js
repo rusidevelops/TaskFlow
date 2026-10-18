@@ -32,6 +32,12 @@ function renderItems() {
         button.className = "deleteButton";
         button.onclick = () => removeItems(idx)
 
+        container.addEventListener("keydown", (e) => {
+            if (e.key === "Delete" || e.key === "Backspace") {
+                removeItems(idx);
+            }
+        });
+
         container.appendChild(text)
         container.appendChild(button)
 
@@ -61,3 +67,7 @@ function removeItems(idx) {
 }
 
 document.addEventListener("DOMContentLoaded", loadItems)
+
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") addItem();
+});

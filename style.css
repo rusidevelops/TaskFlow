@@ -8,6 +8,8 @@ body{
     min-height: 80vh;
     font-family: monospace;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none; 
 }
 
 .deleteButton{
@@ -17,6 +19,7 @@ body{
     height: 40px;
     width: 40px;
     color: white;
+    cursor: pointer;
 }
 
 .cont {
@@ -42,7 +45,7 @@ body{
 input{
     background: transparent;
     height: 30px;
-    font-size: 12px;
+    font-size: 16px;
     outline: none;
     border-radius: 5px;
     color: white;
