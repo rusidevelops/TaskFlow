@@ -25,11 +25,12 @@ img{
 
 .container {
     background: transparent;
-    border: 1px solid gray;
-    display: flex;                  
-    justify-content: space-between; 
-    align-items: center;            
-    padding: 10px 15px;             
+    border: none;
+    border-bottom: 1px solid #22D3EE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .deleteButton{
@@ -68,4 +69,24 @@ input{
     color: white;
     border: 1px solid #22D3EE;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .cont {
+        max-width: 450px;
+        padding: 20px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    input, .cont button:not(.deleteButton) {
+        font-size: 14px;
+        height: 32px;
+    }
 }
