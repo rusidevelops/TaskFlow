@@ -27,7 +27,29 @@ function renderItems() {
         const text = document.createElement("p")
         text.style.display = "inline"
         text.style.marginRight = "10px"
-        text.textContent = item;
+
+        const tagMatch = item.match(/#\w+/);
+
+        if (tagMatch) {
+            const tag = tagMatch[0];
+            const cleanTag = tag.toLowerCase().replace('#', '').trim();
+            const cleanTitle = item.replace(tag, '').trim();
+
+            const tagSpan = document.createElement("span");
+            tagSpan.textContent = tag;
+            tagSpan.className = `task-tag tag-${cleanTag}`;
+            if (!['school', 'work', 'personal'].includes(cleanTag)) {
+                tagSpan.className = "task-tag tag-default";
+            }
+
+            text.appendChild(tagSpan);
+            
+            const titleSpan = document.createElement("span");
+            titleSpan.textContent = cleanTitle;
+            text.appendChild(titleSpan);
+        } else {
+            text.textContent = item;
+        }
 
         const button = document.createElement("button")
         button.textContent = "X"
@@ -46,8 +68,6 @@ function renderItems() {
         itemsDIv.appendChild(container)
     }
 }
-
-
 
 
 function addItem() {
