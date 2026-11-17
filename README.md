@@ -1,1 +1,3 @@
-# TaskFlow
+#BECAUSE OF A GLICH IF U HAVE THE OLD VERSION OR ONE OF THEM YOU'LL NEED TO UNINSTALL IT AMD THEN INSTALL THE NEW ONE!
+
+The app is made by rusidevelops by himself and its made with HTML, CSS and JS
