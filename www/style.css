@@ -10,6 +10,7 @@ body{
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: none; 
     user-select: none;
+    text-wrap: pretty;
 }
 img{
     width: 100px;
@@ -106,7 +107,7 @@ img{
 .task-tag {
   display: inline-block;
   padding: 2px 8px;
-  border-radius: 6px;
+  border-radius: ;
   font-size: 11px;
   font-weight: bold;
   margin-right: 8px;
@@ -146,7 +147,9 @@ input {
     box-sizing: border-box;
     margin-bottom: 10px;
 }
-
+.input{
+    width: 100%;
+}
 @media (min-width: 768px) {
     .cont {
         max-width: 450px;

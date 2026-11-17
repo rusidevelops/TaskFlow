@@ -4,7 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "electron .",
+	"build:win": "electron-builder --win",
+   	"test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,20 @@
     "@capacitor/core": "^8.6.2"
   },
   "devDependencies": {
-    "@capacitor/assets": "^4.0.0"
-  }
+    "@capacitor/assets": "^4.0.0",
+    "electron": "^45.3.3",
+    "electron-builder": "^26.18.0"
+  },
+"build": {
+    "appId": "com.rusidevelops.taskflow",
+    "productName": "TaskFlow",
+    "files": [
+      "main.js",
+      "www/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "dir"
+    		}
+	}
 }
