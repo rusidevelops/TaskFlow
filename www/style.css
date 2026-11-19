@@ -9,7 +9,6 @@ body{
     font-family: monospace;
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: none; 
-    user-select: none;
 }
 img{
     width: 100px;
@@ -22,6 +21,7 @@ img{
     flex-direction: row;
     gap: 10px;          
     align-items: center;
+    user-select: none;
 }
 
 .container {
@@ -45,9 +45,27 @@ img{
     font-size: 13px;
     margin: 0;
     flex: 1;
-    min-width: 0;           
+    min-width: 0;
+}
+h1{
+    user-select: none;
 }
 
+.PDFinstaller{
+    user-select: none;
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    text-decoration: none;
+    right: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s;
+}
+
+.PDFinstaller:active{
+    text-decoration: underline;
+}
 .deleteButton {
     background: red;
     border: 1px solid gray;
@@ -59,7 +77,8 @@ img{
     font-size: 11px;
     color: white;
     cursor: pointer;
-    flex-shrink: 0;             
+    flex-shrink: 0; 
+    user-select: none;            
 }
 
 .cont {
@@ -91,6 +110,7 @@ img{
     color: white;
     border: none;
     font-size: 30px;
+    user-select: none;
 }
 .task {
     background: rgb(4, 4, 78);
@@ -102,7 +122,7 @@ img{
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-
+    user-select: none;
 }
 .task-tag {
   display: inline-block;
@@ -111,6 +131,7 @@ img{
   font-weight: bold;
   margin-right: 8px;
   text-transform: lowercase;
+  user-select: none;
 }
 
 .tag-school { 
@@ -147,7 +168,7 @@ input {
     margin-bottom: 10px;
     overflow-wrap: normal;
     word-break: normal;
-    hyphens: none;
+    user-select: none;
 }
 .input{
     width: 100%;
