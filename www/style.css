@@ -10,7 +10,6 @@ body{
     -webkit-tap-highlight-color: transparent;
     overscroll-behavior-y: none; 
     user-select: none;
-    text-wrap: pretty;
 }
 img{
     width: 100px;
@@ -40,12 +39,13 @@ img{
 }
 
 .container p {
-    word-break: break-all;      
-    overflow-wrap: break-word;  
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: none;
     font-size: 13px;
     margin: 0;
-    flex: 1;                    
-    min-width: 0;               
+    flex: 1;
+    min-width: 0;           
 }
 
 .deleteButton {
@@ -107,7 +107,6 @@ img{
 .task-tag {
   display: inline-block;
   padding: 2px 8px;
-  border-radius: ;
   font-size: 11px;
   font-weight: bold;
   margin-right: 8px;
@@ -146,6 +145,9 @@ input {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 10px;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
 }
 .input{
     width: 100%;
