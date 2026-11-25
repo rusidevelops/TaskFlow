@@ -38,7 +38,7 @@ function renderItems() {
             const tagSpan = document.createElement("span");
             tagSpan.textContent = tag;
             tagSpan.className = `task-tag tag-${cleanTag}`;
-            if (!["school", "work", "personal"].includes(cleanTag)) {
+            if (!["school", "work", "personal", "urgent", "task"].includes(cleanTag)) {
                 tagSpan.className = "task-tag tag-default";
             }
 

@@ -135,12 +135,12 @@ h1{
 }
 
 .tag-school { 
-  background-color: #ef4444; 
+  background-color: #a7a89d; 
   color: white; 
 }
 
 .tag-work { 
-  background-color: #3b82f6; 
+  background-color: #c03f3f; 
   color: white; 
 }
 
@@ -150,8 +150,18 @@ h1{
 }
 
 .tag-default { 
-  background-color: #6b7280; 
+  background-color: #636974; 
   color: white; 
+}
+
+.tag-task {
+    color: rgb(255, 255, 255);
+    background-color: rgb(120, 118, 202);
+}
+
+.tag-urgent { 
+    color: white;
+    background: red;
 }
 
 input {
