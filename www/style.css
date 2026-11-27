@@ -311,13 +311,11 @@ form{
     }
 
     .version{
-        border: 1px solid white;
-        width: 5%;
-        height: 5%;
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
+        text-decoration: underline;
     }
 
 
@@ -338,5 +336,11 @@ form{
     input, .task {
         font-size: 15px;
         height: 40px;
+    }
+
+    .version{
+        width: 7%;
+        height: 7%;
+        font-size: 15px;
     }
 }
