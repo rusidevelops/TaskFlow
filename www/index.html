@@ -8,13 +8,21 @@
     <link rel="icon" type="image/jpeg" href="logo.jpg">
 </head>
 <body>
-    <div class="cont">
-        <a href="guide.pdf" download="TaskFlow-Guide.pdf" class="PDFinstaller" id="guideDownload">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cont" id="home">
+        <a href="taskflow_guide.pdf" download="TaskFlow-Guide.pdf" class="PDFinstaller" id="guideDownload">
             Open guide
         </a>
         <div class="img-row">
-            <img src="logo.jpg">
-            <img src="logo2.png">
+            <img src="logo.jpg" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
         </div>
         <h1>TaskFlow:</h1>
         <div id="items"></div>
@@ -22,8 +30,40 @@
             <input id="itemInput" type="text" placeholder="Do my homework...">
         </div>
         <button class="task" onclick="addItem()">+</button>
-        
-        <script src="main.js?v=2"></script>
     </div>
-</body>
-</html>
+
+    <div id="about" class="page">
+        <div class="page-header">
+            
+            <h2>About</h2>
+        </div>
+        <p>TaskFlow is made by rusidevelops. It started as a simple private test app but it srtarted growing.</p>
+        <p class="version">v0.7</p>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="page-header">
+            <h2>Contact</h2>
+        </div>
+        <p>GitHub: https://github.com/rusidevelops</p>
+        <p>TikTok: https://www.tiktok.com/@rusi.davidoff</p>
+
+        <form action="https://formspree.io/f/xnnldozn" method="POST">
+    <div class="info">
+    </div>
+    <label>
+        <p>Your email:</p>
+        <input type="email" name="email" required placeholder="example@domain.com">
+    </label>
+
+    <label>
+        <p>Your message:</p>
+        <textarea name="message" required placeholder="I wanted to text you about..."></textarea>
+    </label>
+    <button class="submit" type="submit">Send message</button>
+    </form>
+    </div>
+
+    <script src="main.js?v=2"></script>
+    </body>
+    </html>
